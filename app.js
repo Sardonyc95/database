@@ -2,13 +2,14 @@ console.log("Hello teamates");
 
 var obj = {
     name: "Amarachi",
-    height: 5.2, //"meters",
+    height: 5,
     gender: "female",
     isSingle: true,
     occupation: "trainee",
-    salary: null,
-    calculateBMI: function(BW, height){
-        console.log(BW / height * height)
+    salary: 10000,
+    calculateBMI: function (BW) {
+        var BMI = BW / (obj.height * obj.height);
+        console.log(BMI);
     }
 
 
@@ -21,5 +22,5 @@ console.log(obj.gender);
 console.log(obj.isSingle);
 console.log(obj.occupation);
 console.log(obj.salary);
-obj.calculateBMI(50, 5.2);  //"kilograms");
+obj.calculateBMI(60);
 
