@@ -1,6 +1,12 @@
-console.log("Hello teamates");
+//Variables, Datatypes
+// Assignment 1
+1. //Create an object of human with their basic features such as
+//name, height, gender, maritalStatus, occupation, salary,
+2. // and a function that takes the weight and prints the person's BMI
 
-var obj = {
+console.log("Application to display Users details & BMI");
+
+var person = {
     name: "Amarachi",
     height: 5,
     gender: "female",
@@ -8,19 +14,28 @@ var obj = {
     occupation: "trainee",
     salary: 10000,
     calculateBMI: function (BW) {
-        var BMI = BW / (obj.height * obj.height);
-        console.log(BMI);
+        var BMI = BW / (this.height * this.height);
+        console.log(BMI + "kg/m^2");
     }
 
 
 }
 
+//console.log(person);
+console.log(person.name);
+console.log(person.height + "meters");
+console.log(person.gender);
+console.log(person.isSingle);
+console.log(person.occupation);
+console.log(person.salary);  
+person.calculateBMI(60);
 
-console.log(obj.name);
-console.log(obj.height);
-console.log(obj.gender);
-console.log(obj.isSingle);
-console.log(obj.occupation);
-console.log(obj.salary);
-obj.calculateBMI(60);
+
+
+
+
+
+
+
+
 
