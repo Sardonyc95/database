@@ -13,7 +13,7 @@ var currencyType = prompt("what currency do you want to convert? e.g USD, Naira,
 if(currencyType == "USD") {
     alert(1 + "USD" + " " + "=" + " " + 980 + " " + "Naira");
     var currencyamount = prompt("How much do you want to convert?");
-    alert(currencyamount * 980 + " " + "Naira");
+    alert("Amount converted =" + " " + currencyamount * 980 + " " + "Naira");
     var transaction_continues = prompt("Do you want to perform another transaction?");
     if(transaction_continues == "yes"){
         alert("Reload page and continue. Thanks!!!");
@@ -23,7 +23,7 @@ if(currencyType == "USD") {
 }else if (currencyType == "GBP") {
     alert(1 + "GBP" + " " + "=" + " " + 800 + " " + "Naira");
     var currencyamount = prompt("How much do you want to convert?");
-    alert(currencyamount * 800 + " " + "Naira");
+    alert("Amount converted =" + " " + currencyamount * 800 + " " + "Naira");
     var transaction_continues = prompt("Do you want to perform another transaction?");
     if(transaction_continues == "yes"){
         alert("Reload page and continue. Thanks!!!");
@@ -33,7 +33,7 @@ if(currencyType == "USD") {
 }else if (currencyType == "EUR") {
     alert(1 + "EUR" + " " + "=" + " " + 750 + " " + "Naira");
     var currencyamount = prompt("How much do you want to convert?");
-    alert(currencyamount * 750 + " " + "Naira");
+    alert("Amount converted =" + " " + currencyamount * 750 + " " + "Naira");
     var transaction_continues = prompt("Do you want to perform another transaction?");
     if(transaction_continues == "yes"){
         alert("Reload page and continue. Thanks!!!");
@@ -43,7 +43,7 @@ if(currencyType == "USD") {
 }else if (currencyType == "Cedis") {
     alert(1 + "Cedis" + " " + "=" + " " + 600 + " " + "Naira");
     var currencyamount = prompt("How much do you want to convert?");
-    alert(currencyamount * 600 + " " + "Naira");
+    alert("Amount converted =" + " " + currencyamount * 600 + " " + "Naira");
     var transaction_continues = prompt("Do you want to perform another transaction?");
     if(transaction_continues == "yes"){
         alert("Reload page and continue. Thanks!!!");
@@ -53,7 +53,7 @@ if(currencyType == "USD") {
 }else if (currencyType == "Yen") {
     alert(1 + "Yen" + " " + "=" + " " + 300 + " " + "Naira");
     var currencyamount = prompt("How much do you want to convert?");
-    alert(currencyamount * 300 + " " + "Naira");
+    alert("Amount converted =" + " " + currencyamount * 300 + " " + "Naira");
     var transaction_continues = prompt("Do you want to perform another transaction?");
     if(transaction_continues == "yes"){
         alert("Reload page and continue. Thanks!!!");
