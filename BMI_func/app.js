@@ -21,14 +21,15 @@ var person = {
 
 }
 
-//console.log(person);
+console.log(person);
 console.log(person.name);
 console.log(person.height + "meters");
 console.log(person.gender);
 console.log(person.isSingle);
 console.log(person.occupation);
-console.log(person.salary);  
+console.log(person.salary);
 person.calculateBMI(60);
+
 
 
 
