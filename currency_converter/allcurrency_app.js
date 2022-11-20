@@ -1,3 +1,4 @@
+//Assignment 3
 2. // create an application that takes in the currency you want to change
 // the currency you desire to get and the amount you desire to change,
 // let the result be the amount of the deired currency with the currency code you want to change

@@ -8,7 +8,7 @@ console.log("Application for naira currency converter app");
 
 alert("Hi, welcome to your naira currency converter");
 
-    var currencyType = prompt("what currency do you want to convert to NGN? e.g USD, GBP, EUR, GHC, JPY, etc.");
+var currencyType = prompt("what currency do you want to convert to NGN? e.g USD, GBP, EUR, GHC, JPY, etc.");
 
 if(currencyType == "USD") {
     alert("Conversion rate:" + " " + 1 + " " + "$" + "=" + " " + 700 + " " + "₦");
@@ -17,7 +17,7 @@ if(currencyType == "USD") {
     var transaction_continues = prompt("Do you want to perform another transaction?");
     if(transaction_continues == "yes"){
         alert("Reload page and continue. Thanks!!!");
-    } else if (transaction_continues == "no"){
+    } else if(transaction_continues == "no"){
         alert("Thanks and Goodbye!!!");
     }
 }else if (currencyType == "GBP") {
@@ -50,7 +50,7 @@ if(currencyType == "USD") {
     } else if (transaction_continues == "no"){
         alert("Thanks and Goodbye!!!");
     }
-}else if (currencyType == "JPY") {
+}else if(currencyType == "JPY") {
     alert("Conversion rate:" + " " + 1 + " " + "¥" + " " + "=" + " " + 3.03320 + " " + "₦");
     var currencyamount = prompt("How much [JPY] do you want to convert?");
     alert("Amount converted =" + " " + currencyamount * 3.03320 + " " + "₦");
@@ -61,7 +61,7 @@ if(currencyType == "USD") {
         alert("Thanks and Goodbye!!!");
     }
 }
-naira_currency_converter();
+
 
 
 
