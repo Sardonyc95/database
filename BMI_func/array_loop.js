@@ -84,27 +84,24 @@
 // }
 // reverseWord();
 
-
-//Soln 2:
-function reverseWord() {
-    var name = prompt("what is your name");
-    alert(name.split(""), reverse().join(""));
+// //Soln 2:
+// function reverseWord() {
+//     var name = prompt("what is your name");
+//     alert(name.split(""), reverse().join(""));
     
-}
-reverseWord();
-
+// }
+// reverseWord();
 
 // //Soln 3:
 // function reverseString() {
 //     var newString = " ";
 //     var str = prompt("type a word");
-//     for (var i = str.length - 1; i >= 0; i--) { 
-//         newString += str[i]; 
+//     for (var i = str.length - 1; i >= 0; i--) {
+//         newString += str[i];
 //     }
 //     alert(newString);
 // }
 // reverseString();
-
 
 //Soln 4:
 // function takeInWord(){
@@ -117,3 +114,55 @@ reverseWord();
 //      }
   
 //      takeInWord()
+
+
+//Assignment 7
+// for  the previous assignment 4 , given the same array produce the same result
+// using the map and forEach method in es6; reseach the difference between the two methods
+
+
+var classStudentsDetails = [
+    {
+        name: "Princess",
+        age:2,
+        class:"js1"
+    },
+    {
+        name: "Hope",
+        age:1,
+        class:"js2"
+    },
+    {
+        name: "Amarachi",
+        age:3,
+        class:"js3"
+    },
+    {
+        name: "Vivian",
+        age:2,
+        class:"js1"
+    },
+    
+];
+
+// loop through it and print out a sentence of this format.
+// My name is ......., I am ........ old and I am in class ......;
+
+//soln 1: array.map(method)
+// var sentence = classStudentsDetails.map (element =>
+//     console.log("My name is" + " " + element.name + "," + " " + "I am" + " " + element.age + " " + "years old" + " " + "and I am in" + " " + element.class));
+
+//soln 2: array.forEach(method)
+// var sentence = classStudentsDetails.forEach(element => console.log("My name is" + " " + element.name + "," + " " + "I am" + " " + element.age + " " + "years old" + " " + "and I am in" + " " + element.class));
+    
+
+
+//Assignment 8
+// also find the students whose ages are less than 2 years
+// also filter the students whose ages are less than 2 years
+
+//soln 2: array.find(method)
+var studentslessthan2 = classStudentsDetails.find(element => element[i].age < 2);
+
+console.log(studentslessthan2);
+
