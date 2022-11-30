@@ -1,5 +1,5 @@
 //for_loop: object_array
-//Assignment 4
+//Assignment 3
 
 // var classStudentsDetails = [
 //     {
@@ -64,12 +64,17 @@
 //     // break;
 //     // }
    
-// }
-//code ends here//
+// // }
+// //code ends here//
+
+// Assignment 4
+// 1. find out the difference:
+// amount == 5;
+// amount === 5;
+
 
 
 //reverse_loop(string)
-//Assignment 5
 2. // create a function that takes in a word on the prompt and alerts the reverse of that word
 // if I input "Hope", it should give me back "epoH";
 
@@ -87,8 +92,11 @@
 // //Soln 2:
 // function reverseWord() {
 //     var name = prompt("what is your name");
-//     alert(name.split(""), reverse().join(""));
+//     var newName = (name.split("").reverse().join(""));
     
+//     alert(newName);
+       //alert(name.split("").reverse().join(""));
+
 // }
 // reverseWord();
 
@@ -100,6 +108,7 @@
 //         newString += str[i];
 //     }
 //     alert(newString);
+//or   alert(newString.trim());
 // }
 // reverseString();
 
@@ -107,7 +116,7 @@
 // function takeInWord(){
 //     var typeAWord = prompt("type in any word");
    
-//    //convert string to arr &  reverse i
+//convert string to arr &  reverse i
 //     let reversedWord = Array.from(typeAWord).reverse().join('');
 //     alert(reversedWord)
    
@@ -116,8 +125,8 @@
 //      takeInWord()
 
 
-//Assignment 7
-// for  the previous assignment 4 , given the same array produce the same result
+//Assignment 6
+// for  the previous assignment 4, given the same array produce the same result
 // using the map and forEach method in es6; reseach the difference between the two methods
 
 
@@ -145,9 +154,6 @@ var classStudentsDetails = [
     
 ];
 
-// loop through it and print out a sentence of this format.
-// My name is ......., I am ........ old and I am in class ......;
-
 //soln 1: array.map(method)
 // var sentence = classStudentsDetails.map (element =>
 //     console.log("My name is" + " " + element.name + "," + " " + "I am" + " " + element.age + " " + "years old" + " " + "and I am in" + " " + element.class));
@@ -156,13 +162,11 @@ var classStudentsDetails = [
 // var sentence = classStudentsDetails.forEach(element => console.log("My name is" + " " + element.name + "," + " " + "I am" + " " + element.age + " " + "years old" + " " + "and I am in" + " " + element.class));
     
 
-
-//Assignment 8
-// also find the students whose ages are less than 2 years
+//2. Also find the students whose ages are less than 2 years
 // also filter the students whose ages are less than 2 years
 
 //soln 2: array.find(method)
-var studentslessthan2 = classStudentsDetails.find(element => element[i].age < 2);
+// var studentslessthan2 = classStudentsDetails.find(element => element[i].age < 2);
 
-console.log(studentslessthan2);
+// console.log(studentslessthan2);
 

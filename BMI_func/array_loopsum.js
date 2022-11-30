@@ -1,5 +1,5 @@
 // Assignment 5
-// var studentList = [
+//1. var studentList = [
 //     {
 //         name: "Princess",
 //         age:2,
@@ -76,6 +76,24 @@ function AllstudentAcctBal() {
 
   }
 AllstudentAcctBal();
+
+
+//2. Given a person's first name and last name is inputed into the prompt, alert the first letter of the first and last name only in capital letters.
+//Eg. when i enter "Ogbodo Uchenna", it should alert OU.
+
+
+
+function getNameIntials() {
+    var fullName = prompt("enter your full name eg. first & last name");
+    var newNameArr = fullName.split(" ");
+    var initialRes = "";
+    for (var i = 0; i < newNameArr.length; i++){
+        initialRes = initialRes + newNameArr[i].substring(0,1);
+    }
+    alert(initialRes.toLocaleUpperCase);
+    
+}
+getNameIntials();
 
 
 

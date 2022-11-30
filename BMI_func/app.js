@@ -33,7 +33,3 @@ person.calculateBMI(60);
 
 
 
-//Given an array of numbers from 1-30, write a program to replace the values that are divisible by 3 with "beans", the values divisible by 5 with "cake" and the values divisible by 3 and 5 with "beans cake".
-
-
-

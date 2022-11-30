@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display:flex ; justify-content:center; align-items:center; flex-direction: column;">
+
+    <h1 id="count">0</h1>
+    <div>
+        <button id="addBtn">+</button>
+        <button id="subtractBtn">-</button>
+
+    </div>
+
+    <!-- <div id="container">
+        
+    </div>
+    <script>
+
+        const count = document.getElementById('count');
+        const addBtn = document.getElementById('addBtn');
+        const subtractBtn = document.getElementById('subtractBtn');
+        const container = document.getElementById('container');
+        // container.append('hello my world');
+        container.innerText = 'hello my good friend';
+        const div = document.createElement('div');
+        div.innerText = 'my new div';
+        container.append(div);
+
+        addBtn.addEventListener('click',()=>{
+
+        })
+
+
+    </script> -->
+
+    <script>
+
+        const count = document.getElementById('count');
+        const addBtn = document.getElementById('addBtn');
+        const subtractBtn = document.getElementById('subtractBtn');
+        
+        let value = 0;
+
+        addBtn.addEventListener('click',()=>{
+            value = value + 1;
+            count.innerText = value;
+        });
+        
+        subtractBtn.addEventListener('click',()=>{
+            value = value - 5;
+            count.innerText = value;
+        });
+
+
+    </script>
+</body>
+</html>

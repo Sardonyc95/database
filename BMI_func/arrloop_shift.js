@@ -1,48 +1,53 @@
-//Assignment 6
-//Given a person's first name and last name is inputed into the prompt, alert the first letter of the first and last name only in capital letters.
-//Eg. when i enter "Ogbodo Uchenna", it should alert OU.
+//Assignment 7
+//1. Given an array of numbers from 1-30, write a program to replace the values that are divisible by 3 with "beans", the values divisible by 5 with "cake" and the values divisible by 3 and 5 with "beans cake".
 
-// var fullname = prompt("enter your full name eg. first & last name");
+//soln 1:
+var numArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
 
-// function users_fullname() {
-
-    
-// }
-// users_fullname();
-
-
-
-
-
-
-
-
-var studentList = [
-        {
-            name: "Princess",
-            age:2,
-            class:"js1"
-        },
-        {
-            name: "Hope",
-            age:1,
-            class:"js2"
-        },
-        {
-            name: "Amarachi",
-            age:3,
-            class:"js3"
+function numdivisible(newArr) {
+    var res = [];
+    for (i = 0; i < newArr.length; i++){
+        if (i == 0) {
+            res.push()
         }
-        
-    
-];
-
-var vee = {
-    name: "Vivian",
-    age: 3,
-    class: "js3",
+        else if (newArr[i] % 3 == 0){
+            res.push("beans");
+        }
+        else if (newArr[i] % 5 == 0) {
+            res.push("cake");
+        }
+        else if (newArr[i] % 3 && numArr[i] % 5 == 0) {
+            res.push("beans cake");
+        }
+        else {
+            res.push(newArr[i])
+        }
+    }
+    console.log(res);
 }
+numdivisible(numArr);
 
-console.log(studentList);
-studentList.shift(vee);
-console.log(studentList);
+
+//soln 2:
+// function beansCake(arrInput){
+//     const res = [];
+//         for(var i = 0; i <= arrInput.length; i++ ){
+//             if(i == 0){
+//                 res.push()
+//             }
+//             else if(arrInput[i] % 5 == 0 && arrInput[i] % 3 == 0){
+//                 res.push("beansCake");
+//             }
+//             else if(i % 3 == 0){
+//                 res.push("beans");
+//             }else if( i % 5 == 0){
+//                 res.push("cake");
+//             }else{
+//                 res.push(arrInput[i])
+    
+//             }
+//         }
+//         console.log(res);
+//     }
+//     var myArr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30];
+//     beansCake(myArr);

@@ -1,0 +1,26 @@
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+#container > div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 4px;
+    padding: 20px;
+}
+#container > div >h1{
+    font-size: 14px;
+}
+#container > div > img{
+    width: 100%;
+    height: 200px;
+}
+#container > div > button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    background:#189bec;
+    color: #fff;
+    margin-top: 10px;
+}
